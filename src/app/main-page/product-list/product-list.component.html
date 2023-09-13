@@ -1,0 +1,50 @@
+<div class="prod">
+
+
+
+  <div *ngFor="let product of products">
+
+    <div class="content" >
+
+      <h3 routerLink="/products/{{product.name}}">
+        {{ product.name }}
+      </h3>
+
+      <div class="inner">
+
+        <p *ngIf="product.description">
+          Description: {{ product.description }}
+        </p>
+
+        <div class="product-image">
+          <img class="image" [src]="product.imageUrl" height="150px">
+        </div>
+
+      </div>
+
+      <div class="info">
+
+        <div class="price">
+          <p> price: {{product.price}}</p>
+        </div>
+
+        <div class="first_col">
+
+          <button type="button" >
+            Share
+          </button>
+
+          <div class="like-btn">
+            <button type="button" >Buy</button>
+  <!--          <p> {{ product.likes }}</p>-->
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

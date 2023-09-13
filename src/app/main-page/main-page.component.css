@@ -1,0 +1,10 @@
+* {
+  /*padding: 15px 30px;*/
+  /*background-color: black;*/
+}
+
+.main-page-body {
+  width: 100%;
+  display: flex;
+  /*flex-direction: row;*/
+}
